@@ -1,0 +1,285 @@
+body{
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-container{
+    min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    background: white;
+    border-right: 1px solid #ddd;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.dashboard-title{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+}
+
+.menu li{
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logout{
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Products */
+
+.products-section{
+    padding: 30px;
+}
+
+.product-card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.product-card img{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-info{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Upload */
+
+.upload-section{
+    background: white;
+    padding: 25px;
+    border-left: 1px solid #ddd;
+}
+
+.upload-box{
+    width: 100%;
+    min-height: 180px;
+
+    border: 2px dashed #999;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background: #fafafa;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-box:hover{
+    background: #f0f0f0;
+}
+
+#preview{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+
+    display: none;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+/* Cars Table */
+
+.cars-table-header{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.header-product{
+    flex: 2;
+}
+
+.header-price{
+    flex: 1;
+    text-align: center;
+}
+
+.header-actions{
+    width: 140px;
+    text-align: center;
+}
+.popup-alert{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    min-width: 300px;
+
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Car Row */
+
+.car-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.car-row:hover{
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Product */
+
+.car-product{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 2;
+}
+
+.car-product img{
+    width: 85px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.car-info h5{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.car-info p{
+    margin: 4px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Price */
+
+.car-price{
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Actions */
+
+.car-actions{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.edit-btn{
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.delete-btn{
+    border: 1px solid #ffdddd;
+    color: #ff4d4d;
+}
+
+.edit-btn:hover{
+    background: #f1f1f1;
+}
+
+.delete-btn:hover{
+    background: #fff0f0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .cars-table-header{
+        display: none !important;
+    }
+
+    .car-row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .car-price{
+        text-align: left;
+    }
+
+    .car-actions{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+}
