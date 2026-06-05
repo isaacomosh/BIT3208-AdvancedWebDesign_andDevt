@@ -29,7 +29,7 @@ $result = mysqli_query($conn, $sql);
 
         
         <img 
-    src="http://localhost/CARSHOW/uploads/<?php echo $row['image']; ?>" 
+    src="http://localhost/CAR_DEALERSHIP/Week5/uploads/<?php echo $row['image']; ?>" 
     alt="car"
 >        
         <div class="card-body">

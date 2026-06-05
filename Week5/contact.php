@@ -98,9 +98,9 @@
         <h1>Contact Us</h1>
 
         <div class="socials">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="https://facebook.co" target="_blank">Facebook</a>
+            <a href="https://instagram.co" target="_blank">Instagram</a>
+            <a href="https://tiktok.co" target="_blank">TikTok</a>
         </div>
 
         <div class="hotline">

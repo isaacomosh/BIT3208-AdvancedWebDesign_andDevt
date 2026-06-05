@@ -37,7 +37,7 @@ session_start();
 
                 <ul class="navbar-nav mx-auto gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="index.php">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -52,7 +52,7 @@ session_start();
                 
 
                 <?php if(isset($_SESSION["full_name"])): ?>
-    <h3>Welcome, <?php echo $_SESSION["full_name"]; ?></h3>
+    <h3>Welcome, <?php echo $_SESSION["full_name"]; ?> <a href="logout.php">logout</a></h3>
 <?php else: ?>
     <div class="d-flex align-items-center gap-3">
                     <a href="login.php" style="color: black;"><img src="./images/icn.png" alt="" width="20px" height="20px"></a>
