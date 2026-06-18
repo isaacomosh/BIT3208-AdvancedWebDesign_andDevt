@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+}
+
+/* HERO SECTION */
+.hero{
+    width: 95%;
+    height: 420px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #fff;
+}
+
+/* LEFT SIDE */
+.hero-content{
+    width: 50%;
+    height: 100%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(
+        to right,
+        #ffffff 40%,
+        rgba(255,255,255,0.95) 60%,
+        rgba(255,255,255,0.6) 80%,
+        transparent 100%
+    );
+}
+
+.hero-content h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.hero-content p{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* SEARCH AREA */
+.search-box{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-box select{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    min-width: 130px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box button{
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background: #1456ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover{
+    background: #0d47d9;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-image{
+    width: 50%;
+    height: 100%;
+}
+
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MOBILE */
+@media(max-width: 992px){
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-content{
+        width: 100%;
+        padding: 40px 25px;
+        background: #fff;
+    }
+
+    .hero-image{
+        width: 100%;
+        height: 320px;
+    }
+
+    .hero-content h1{
+        font-size: 38px;
+    }
+
+    .search-box{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box select,
+    .search-box button{
+        width: 100%;
+    }
+
+}
