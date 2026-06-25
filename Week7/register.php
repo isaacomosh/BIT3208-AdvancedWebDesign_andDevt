@@ -4,7 +4,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "Week5db";
+$database = "Week7db";
 
 $conn = mysqli_connect($host, $user, $password, $database);
 

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = new mysqli("localhost", "root", "", "Week5db");
+$conn = new mysqli("localhost", "root", "", "Week7db");
 
 $id = $_POST['id'];
 $car_name = $_POST['car_name'];

@@ -1,0 +1,136 @@
+/* style.css */
+
+body{
+    background: #f5f7fb;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    border-radius: 0 0 0px 0px;
+}
+
+.nav-link{
+    color: #222 !important;
+    font-weight: 500;
+}
+
+.icon-circle{
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    overflow: visible; /* IMPORTANT for overflow effect */
+    position: relative;
+}
+
+/* LEFT */
+.hero-content {
+    
+    flex: 1;
+    z-index: 2;
+}
+
+/* RIGHT */
+.hero-right {
+    flex: 1;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* IMAGE */
+.hero-car-img {
+  
+    width: 650px;        /* increase size */
+    max-width: none;     /* allow overflow */
+    transform: translateX(-120px); /* pushes image into left side */
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+/* OPTIONAL: hover effect */
+.hero-car-img:hover {
+    transform: translateX(-140px) scale(1.05);
+}
+
+/* MOBILE */
+@media(max-width: 992px){
+
+    .hero{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-content{
+        width: 100%;
+        padding: 40px 25px;
+        background: #fff;
+    }
+
+    .hero-image{
+        width: 100%;
+        height: 320px;
+    }
+
+    .hero-content h1{
+        font-size: 38px;
+    }
+
+    .search-box{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box select,
+    .search-box button{
+        width: 100%;
+    }
+
+}
+
+/* CARDS */
+.car-card{
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-card:hover{
+    transform: translateY(-5px);
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+/* FEATURES */
+.feature-box{
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+.nav-link{
+    font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+}
